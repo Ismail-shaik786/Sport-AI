@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: sport-ai-backend
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "node index.js"
+    envVars:
+      - key: PYTHONPATH
+        value: /opt/render/project/src/backend
